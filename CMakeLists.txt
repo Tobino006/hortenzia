@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(${PROJECT_NAME}
         main.cpp
+        commands/description.cpp
+        commands/gender.cpp
 )
 
 # Homebrew prefix na Apple Silicon
