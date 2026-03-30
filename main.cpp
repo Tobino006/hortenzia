@@ -13,9 +13,7 @@ std::string loadEnv() {
     std::string line;
     while (std::getline(file, line)) {
         if (line.substr(0, 9) == "BOT_TOKEN") {
-            line = line.erase(0, 11);
-            line = line.erase(line.length()-1);
-            return line;
+            return line.erase(0, 10);
         }
     }
     return "kokot :3";
